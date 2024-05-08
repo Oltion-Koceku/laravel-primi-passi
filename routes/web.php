@@ -20,3 +20,19 @@ Route::get('/', function() {
     ];
     return view('home', $data);
 })->name('home');
+
+Route::get('/Lorem', function() {
+
+    $data = [
+        'text' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eius obcaecati est animi earum deleniti minus ea! Rem, necessitatibus dolorem!'
+    ];
+    return view('Lorem', $data);
+})->name('Lorem');
+
+Route::get('/Info', function() {
+
+    $data = [
+        'text' => 'Ciao Ciao'
+    ];
+    return view('Info', $data);
+})->name('Info');
